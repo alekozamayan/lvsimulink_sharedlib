@@ -11,10 +11,12 @@ It is designed to work under Windows (host machine), however can be ported easil
 ### Setup
 - Download toolchain and extract to some directory.
 - Download the repository
+  
 In repo,
 - Copy the generated Simulink C code to "algsrc" directory.
 - Modify the environment variable values in "setenv.bat" according to the instructions inside file, using a text editor.
 - Call "getinterface.bat". That will process a regex search on the model header file and return the expected input and output structure.
+
 In Labview,
 - Add "Call Library Function Node" in your model.
 - Follow the instructions written in "deflist.h" and according to your VI, modify the "deflist.h" NI_INPUT_LIST and NI_OUTPUT_LIST macros.
